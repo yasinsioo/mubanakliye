@@ -520,7 +520,10 @@ const Home = () => {
                     <small class="align-top text-muted font-weight-medium">
                       TL
                     </small>
-                    1600
+                    {truckPriceData &&
+                      renderTextWithLineBreaks(
+                        truckPriceData[0].twoSmallTruckPrice
+                      )}
                     <small class="align-bottom text-muted font-weight-medium"></small>
                   </h1>
                 </div>
