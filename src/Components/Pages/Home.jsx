@@ -520,10 +520,7 @@ const Home = () => {
                     <small class="align-top text-muted font-weight-medium">
                       TL
                     </small>
-                    {truckPriceData &&
-                      renderTextWithLineBreaks(
-                        truckPriceData[0].twoSmallTruckPrice
-                      )}
+                    {truckPriceData && truckPriceData[0].twoSmallTruckPrice}
                     <small class="align-bottom text-muted font-weight-medium"></small>
                   </h1>
                 </div>
@@ -575,10 +572,6 @@ const Home = () => {
 
                 <p>
                   <i class="fa fa-envelope mr-2"></i>mustafabahattin42@gmail.com
-                </p>
-
-                <p>
-                  <i class="fa fa-envelope mr-2"></i>
                 </p>
 
                 <div class="d-flex justify-content-start mt-4">
