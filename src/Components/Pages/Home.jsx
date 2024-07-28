@@ -24,7 +24,7 @@ const Home = () => {
       twoSmallTruck,
       twoSmallTruckPrice
     }`;
-    const queryTruck = `*[ _type == "truckTransport"] {
+    const queryTruck = `*[ _type == "truckPrice"] {
       truckTransport,
       smallTruck,
       twoSmallTruck,
