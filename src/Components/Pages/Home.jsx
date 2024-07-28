@@ -24,7 +24,7 @@ const Home = () => {
       twoSmallTruck,
       twoSmallTruckPrice
     }`;
-    const queryTruck = `*[ _type == "truckPrice"] {
+    const queryTruck = `*[ _type == "truckTransport"] {
       truckTransport,
       smallTruck,
       twoSmallTruck,
@@ -279,7 +279,7 @@ const Home = () => {
 
             <div class="col-lg-5">
               <div class="bg-primary py-5 px-4 px-sm-5">
-                <form method="POST" action="/mail/bilgial.php" class="py-5">
+                <form method="POST" action="#" class="py-5">
                   <div class="form-group">
                     <input
                       type="text"
@@ -356,7 +356,7 @@ const Home = () => {
                 </h5>
               </div>
 
-              <p>İşlerinizin aksamasına neden olmadan yüklerinizi taşıyoruz.</p>
+              <p>{truckData && truckData[0].truckTransport}</p>
             </div>
 
             <div class="col-lg-3 col-md-6 text-center mb-5">
@@ -366,10 +366,7 @@ const Home = () => {
                 <h5 class="text-white font-weight-medium m-0">Küçük Kamyon</h5>
               </div>
 
-              <p>
-                2500 ila 5500 kilogram arasındaki yüklerinizi sizin için
-                taşıyoruz.
-              </p>
+              <p>{truckData && truckData[0].smallTruck}</p>
             </div>
 
             <div class="col-lg-3 col-md-6 text-center mb-5">
@@ -382,10 +379,7 @@ const Home = () => {
                 </h5>
               </div>
 
-              <p>
-                6000 x 2 yani 12000 kilograma kadar yüklerinizi sizin için 2
-                küçük kamyon ile taşıyoruz.
-              </p>
+              <p>{truckData && truckData[0].twoSmallTruck}</p>
             </div>
 
             <div class="col-lg-3 col-md-6 text-center mb-5">
@@ -397,10 +391,7 @@ const Home = () => {
                 </h5>
               </div>
 
-              <p>
-                İstekleriniz doğrultusunda sizlere ekstra forklift hizmeti
-                sağlıyoruz.
-              </p>
+              <p>{truckData && truckData[0].forkliftService}</p>
             </div>
           </div>
         </div>
