@@ -12480,7 +12480,9 @@ p,
 .testimonial-carousel .owl-dot.active {
   background: #ff4800;
 }
-
+.contact-form {
+  padding: 0.5rem 0.75rem;
+}
 .contact-form .help-block ul {
   margin: 0;
 

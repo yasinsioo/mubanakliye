@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import "../Assets/styles.css";
+import "../Assets/styles.min.css";
 
 const Contact = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -110,6 +112,8 @@ const Contact = () => {
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
+                width="100%"
+                height="85%"
               ></iframe>
             </div>
 
@@ -140,62 +144,56 @@ const Contact = () => {
               </button>
               <br />
 
-              <div class="contact-form bg-secondary">
+              <div className="contact-form bg-secondary">
                 <div id="success"></div>
-
-                <form
-                  method="POST"
-                  action="mail/bilgial.php"
-                  id="contactForm"
-                  novalidate="novalidate"
-                >
-                  <div class="control-group">
+                <form method="POST" action="#" id="contactForm" noValidate>
+                  <div className="control-group">
                     <input
                       type="text"
-                      class="form-control border-0 p-4"
+                      className="form-control border-0 p-4"
                       name="isim"
                       id="isim"
                       placeholder="İsim"
-                      required="required"
+                      required
                       data-validation-required-message="Lütfen isminizi girin."
                     />
-
-                    <p class="help-block text-danger"></p>
+                    <p className="help-block text-danger"></p>
                   </div>
 
-                  <div class="control-group">
+                  <div className="control-group">
                     <input
                       type="number"
-                      class="form-control border-0 p-4"
+                      className="form-control border-0 p-4"
                       name="telno"
-                      oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
-                      maxlength="11"
+                      onInput={(e) => {
+                        if (e.target.value.length > 11) {
+                          e.target.value = e.target.value.slice(0, 11);
+                        }
+                      }}
                       id="telno"
                       placeholder="Telefon numaranız"
-                      required="required"
+                      required
                       data-validation-required-message="Lütfen telefon numaranızı girin."
                     />
-
-                    <p class="help-block text-danger"></p>
+                    <p className="help-block text-danger"></p>
                   </div>
 
-                  <div class="control-group">
+                  <div className="control-group">
                     <textarea
-                      class="form-control border-0 py-3 px-4"
+                      className="form-control border-0 py-3 px-4"
                       rows="3"
                       name="not"
                       id="not"
                       placeholder="Mesaj"
-                      required="required"
-                      data-validation-required-message="Lütfen mesajınızı yazın"
+                      required
+                      data-validation-required-message="Lütfen mesajınızı yazın."
                     ></textarea>
-
-                    <p class="help-block text-danger"></p>
+                    <p className="help-block text-danger"></p>
                   </div>
 
                   <div>
                     <button
-                      class="btn btn-primary py-3 px-4"
+                      className="btn btn-primary py-3 px-4"
                       type="submit"
                       id="sendMessageButton"
                     >
