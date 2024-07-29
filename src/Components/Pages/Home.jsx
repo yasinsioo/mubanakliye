@@ -375,7 +375,7 @@ const Home = () => {
                 <i class="fa fa-2x fa-truck text-dark pr-3"></i>
 
                 <h5 class="text-white font-weight-medium m-0">
-                  2 Küçük Kamyon
+                  10 Teker Kamyon
                 </h5>
               </div>
 
