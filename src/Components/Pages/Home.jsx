@@ -517,7 +517,7 @@ const Home = () => {
                 </div>
 
                 <div class="bg-primary text-center p-4">
-                  <h3 class="m-0">2 Kamyon İle Nakliye</h3>
+                  <h3 class="m-0">10 Teker Kamyon</h3>
                 </div>
 
                 <div class="d-flex flex-column align-items-center py-4">
