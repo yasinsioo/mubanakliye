@@ -146,7 +146,7 @@ const Contact = () => {
 
               <div className="contact-form bg-secondary">
                 <div id="success"></div>
-                <form method="POST" action="#" id="contactForm" noValidate>
+                <form action="#" id="contactForm" noValidate>
                   <div className="control-group">
                     <input
                       type="text"
@@ -196,6 +196,7 @@ const Contact = () => {
                       className="btn btn-primary py-3 px-4"
                       type="submit"
                       id="sendMessageButton"
+                      disabled="disabled"
                     >
                       Gönder
                     </button>

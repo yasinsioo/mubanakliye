@@ -279,7 +279,7 @@ const Home = () => {
 
             <div class="col-lg-5">
               <div class="bg-primary py-5 px-4 px-sm-5">
-                <form method="POST" action="#" class="py-5">
+                <form action="#" class="py-5">
                   <div class="form-group">
                     <input
                       type="text"
@@ -315,6 +315,7 @@ const Home = () => {
                     <button
                       class="btn btn-dark btn-block border-0 py-3"
                       type="submit"
+                      disabled="disabled"
                     >
                       Bilgi Al
                     </button>
